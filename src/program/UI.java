@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class UI {
-    private final static Scanner sc = new Scanner(System.in);
+    private static final Scanner sc = new Scanner(System.in);
 
     public static void showMenu() {
         System.out.println();
@@ -42,14 +42,14 @@ public class UI {
 
             arremessos.add(new Arremesso(Double.parseDouble(distancia)));
         }
-        System.out.println();
         atleta.getArremessos().addAll(arremessos);
+        System.out.println("Arremessos cadastrados com sucesso!\n");
         return atleta;
     }
 
     public static Atleta atletaAddNota(Atleta atleta) {
         List<Nota> notas = new ArrayList<>();
-        System.out.println("Agora, digite suas notas\n");
+        System.out.println("Digite suas notas\n");
 
         for (int i = 1; i <= 5; i++) {
             System.out.print(i + " nota: ");
@@ -62,6 +62,7 @@ public class UI {
             notas.add(new Nota(Double.parseDouble(nota)));
         }
         atleta.getNotas().addAll(notas);
+        System.out.println("Notas cadastradas com sucesso!");
         return atleta;
     }
 }
