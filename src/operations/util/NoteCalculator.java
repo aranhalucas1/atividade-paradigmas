@@ -1,6 +1,5 @@
 package operations.util;
 
-import model.Atleta;
 import model.Nota;
 import program.exceptions.IllegalAccessException;
 
@@ -14,11 +13,10 @@ public class NoteCalculator {
         throw new IllegalAccessException("Utiliy class");
     }
 
-    public static List<Nota> removeMinNote(Atleta atleta) {
-        List<Nota> list = atleta.getNotas();
-        Nota nota = list.stream().min(Comparator.comparing(Nota::getNota)).orElseThrow(NoSuchElementException::new);
-        list.remove(nota);
-        return list;
+    public static List<Nota> removeMinNote(List<Nota> notas) {
+        Nota nota = notas.stream().min(Comparator.comparing(Nota::getNota)).orElseThrow(NoSuchElementException::new);
+        notas.remove(nota);
+        return notas;
     }
 
     public static Double higherNote(List<Nota> notas) {

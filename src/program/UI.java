@@ -28,7 +28,7 @@ public class UI {
         return new Atleta(nome);
     }
 
-    public static Atleta atletaAddArremesso(Atleta atleta){
+    public static void atletaAddArremesso(Atleta atleta){
         List<Arremesso> arremessos = new ArrayList<>();
 
         for (int i = 1; i <= 3; i++) {
@@ -44,10 +44,9 @@ public class UI {
         }
         atleta.getArremessos().addAll(arremessos);
         System.out.println("Arremessos cadastrados com sucesso!\n");
-        return atleta;
     }
 
-    public static Atleta atletaAddNota(Atleta atleta) {
+    public static void atletaAddNota(Atleta atleta) {
         List<Nota> notas = new ArrayList<>();
         System.out.println("Digite suas notas\n");
 
@@ -63,7 +62,6 @@ public class UI {
         }
         atleta.getNotas().addAll(notas);
         System.out.println("Notas cadastradas com sucesso!");
-        return atleta;
     }
 }
 

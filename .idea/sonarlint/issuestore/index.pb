@@ -1,0 +1,23 @@
+
+J
+src/operations/Winner.java,6\4\64e100783990eb18079778701851c453c0293fc8
+C
+src/model/Nota.java,0\7\07ace63a424fde08529cb13898b115a23503b6ee
+E
+src/model/Atleta.java,f\d\fd574f74343f11ac013f1ed9dad8c0763bc8b21a
+P
+ src/operations/ArremesoPeso.java,0\c\0c6e2aac26f244b8ed178ed498663c45a6ab6b5a
+b
+2src/program/exceptions/IllegalAccessException.java,b\4\b4609fac317e3439cfbae9d2d82ed6b25a234241
+W
+'src/operations/util/NoteCalculator.java,0\8\082e3154531ec555c6d44b512b47f7b0621b9680
+V
+&src/operations/GinasticaArtistica.java,7\b\7b8a4c3450d0abf6df81810aaee01dc9786226c4
+[
++src/operations/util/DistanceCalculator.java,e\8\e834379a75b93629c748dd306535f6a853768dfc
+C
+src/program/UI.java,9\d\9ddbb02622e6516b7fd09637d4d8f8bd0ccebb5e
+Q
+!src/program/util/InputVerify.java,6\e\6e092792ba25b325617d1bf844374047f96d8237
+T
+$src/program/AtividadeParadigmas.java,1\e\1edd6b855ded068fb4264a9abc014a95dd67c685

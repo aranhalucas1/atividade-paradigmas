@@ -10,8 +10,8 @@ public class ArremesoPeso implements Winner {
         String atletaNome1 = atleta1.getNome();
         String atletaNome2 = atleta2.getNome();
 
-        Double higherA1 = DistanceCalculator.higherDistance(atleta1);
-        Double higherA2 = DistanceCalculator.higherDistance(atleta2);
+        Double higherA1 = DistanceCalculator.higherDistance(atleta1.getArremessos());
+        Double higherA2 = DistanceCalculator.higherDistance(atleta2.getArremessos());
 
         if(higherA1.equals(higherA2)) {
             empate(atleta1, atleta2);
@@ -27,8 +27,8 @@ public class ArremesoPeso implements Winner {
     }
 
     public void empate(Atleta atleta1, Atleta atleta2) {
-        Double empate1 = DistanceCalculator.secondHigherDistance(atleta1);
-        Double empate2 = DistanceCalculator.secondHigherDistance(atleta2);
+        Double empate1 = DistanceCalculator.secondHigherDistance(atleta1.getArremessos());
+        Double empate2 = DistanceCalculator.secondHigherDistance(atleta2.getArremessos());
 
         System.out.println("EMPATE");
         System.out.println("Agora, será avaliado a segunda maior distancia dos/das atletas");

@@ -6,12 +6,7 @@ import operations.GinasticaArtistica;
 
 import java.util.Scanner;
 
-/*
- * Projeto feito utilizando intelliJ como compilador
- * Pode haver inconsistencias no projeto se compilado utilizando outra IDE
- */
-
-public class AtividadeParadigmas {
+public class ParadigmasApplication {
 
     private static final Scanner sc = new Scanner(System.in);
     private static final String ATLETA2 = "Segundo atleta\n";
@@ -28,17 +23,17 @@ public class AtividadeParadigmas {
             choose = sc.next();
             switch (choose) {
                 case "1":     // arremesso
-                    atleta = UI.atletaAddArremesso(atleta);
+                    UI.atletaAddArremesso(atleta);
                     System.out.println(ATLETA2);
-                    atleta2 = UI.atletaAddArremesso(atleta2);
+                    UI.atletaAddArremesso(atleta2);
 
                     new ArremesoPeso().getWinner(atleta, atleta2);
                     break;
 
                 case "2": // nota
-                    atleta = UI.atletaAddNota(atleta);
+                    UI.atletaAddNota(atleta);
                     System.out.println(ATLETA2);
-                    atleta2 = UI.atletaAddNota(atleta2);
+                    UI.atletaAddNota(atleta2);
 
                     new GinasticaArtistica().getWinner(atleta, atleta2);
                     break;
