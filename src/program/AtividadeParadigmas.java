@@ -13,13 +13,14 @@ import java.util.Scanner;
 
 public class AtividadeParadigmas {
 
-    final static private Scanner sc = new Scanner(System.in);
+    private static final Scanner sc = new Scanner(System.in);
+    private static final String ATLETA2 = "Segundo atleta\n";
 
     public static void main(String[] args) {
         String choose = "";
 
         Atleta atleta = UI.cadastroAtleta();
-        System.out.println("Segundo atleta\n");
+        System.out.println(ATLETA2);
         Atleta atleta2 = UI.cadastroAtleta();
 
         do {
@@ -28,14 +29,14 @@ public class AtividadeParadigmas {
             switch (choose) {
                 case "1":     // arremesso
                     atleta = UI.atletaAddArremesso(atleta);
-                    System.out.println("Segundo atleta\n");
+                    System.out.println(ATLETA2);
                     atleta2 = UI.atletaAddArremesso(atleta2);
                     new ArremesoPeso().getWinner(atleta, atleta2);
                     break;
 
                 case "2": // nota
                     atleta = UI.atletaAddNota(atleta);
-                    System.out.println("Segundo atleta\n");
+                    System.out.println(ATLETA2);
                     atleta2 = UI.atletaAddNota(atleta2);
                     new GinasticaArtistica().getWinner(atleta, atleta2);
                     break;
